@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4DEDE"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_marginTop="100dp"
+        android:text="Search data"
+        android:textSize="40dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/customerSearchButton"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Customer Base Search"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#045f5f"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/otherSearchButton"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:text="Other Search Criteria"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#045f5f"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

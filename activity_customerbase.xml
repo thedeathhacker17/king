@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4DEDE"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/searchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Customer Base Search"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        android:textColor="#3A3B3C"/>
+
+    <Button
+        android:id="@+id/searchByMobileButton"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Search by Mobile Number"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#045f5f"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/searchByIdButton"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="225dp"
+        android:text="Search by Customer ID"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#045f5f"
+        android:textSize="20dp"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:id="@+id/inputField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Enter data here"
+        android:visibility="gone"
+        android:backgroundTint="#045f5f"
+        android:textColor="#3A3B3C"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/submitSearchButton"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="375dp"
+        android:text="Submit"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="#045f5f"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:visibility="gone"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

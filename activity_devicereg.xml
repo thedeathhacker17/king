@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:layout_marginTop="100dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    tools:context=".CustomerIdDeactivationActivity">
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Device Registration"
+        android:textSize="18sp"
+        android:textColor="#3A3B3C"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/customerName"
+        android:layout_marginTop="32dp"/>
+
+    <!-- Customer Name Field -->
+    <EditText
+        android:id="@+id/customerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="User id"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:textColorHint="#8A8A8A"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/customerMobileNumber"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Customer Mobile Number Field -->
+    <EditText
+        android:id="@+id/customerMobileNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Machine ID"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:textColorHint="#8A8A8A"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/customerName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/customerId"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Customer ID Field -->
+    <EditText
+        android:id="@+id/customerId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Machine ID"
+        android:background="@android:color/white"
+        android:padding="10dp"
+        android:elevation="2dp"
+        android:textColorHint="#8A8A8A"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/customerMobileNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toTopOf="@+id/deactivateButton"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Deactivate Button -->
+    <Button
+        android:id="@+id/deactivateButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#045f5f"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:elevation="4dp"
+        app:layout_constraintTop_toBottomOf="@+id/customerId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="232dp"
+        android:layout_height="254dp"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="332dp"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
